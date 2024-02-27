@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "profileVincent",
+  "builds": [
+    { "src": "home-one.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/home-one.html" }
+  ]
+}
