@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "name": "profileVincent",
-  "builds": [
-    { "src": "home-one.html", "use": "@vercel/static" }
-  ],
   "routes": [
+    { "src": "/assets/css/(.*)", "dest": "/assets/css/$1" },
+    { "src": "/assets/icons/(.*)", "dest": "/assets/icons/$1" },
+    { "src": "/assets/images/(.*)", "dest": "/assets/images/$1" },
+    { "src": "/assets/js/(.*)", "dest": "/assets/js/$1" },
+    { "src": "/assets/plugins/(.*)", "dest": "/assets/plugins/$1" },
     { "src": "/(.*)", "dest": "/home-one.html" }
   ]
 }
